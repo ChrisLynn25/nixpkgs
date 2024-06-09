@@ -4,7 +4,7 @@
 , fetchurl
 , nixosTests
 , srcOnly
-, isInsiders ? false
+, isInsiders ? true
 # sourceExecutableName is the name of the binary in the source archive over
 # which we have no control and it is needed to run the insider version as
 # documented in https://wiki.nixos.org/wiki/Visual_Studio_Code#Insiders_Build
@@ -86,7 +86,7 @@ in
         Open source source code editor developed by Microsoft for Windows,
         Linux and macOS
       '';
-      mainProgram = "code";
+      mainProgram = "decode";
       longDescription = ''
         Open source source code editor developed by Microsoft for Windows,
         Linux and macOS. It includes support for debugging, embedded Git
